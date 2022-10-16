@@ -11,14 +11,15 @@ nav {
 
 a {
 	text-decoration: none;
-	color: #000000;
+	color: #ffffff;
 	&:hover {
-		color: #000000;
+		color: #ffffff;
 	}
 }
 
 ul {
 	margin: 0;
+	padding: 0;
 }
 
 li {
@@ -34,7 +35,7 @@ p {
 }
 .container {
 	position: relative;
-	max-width: 1200px;
+	max-width: 1440px;
 	margin: 0 auto;
 	--bs-gutter-x: unset;
 	&_xl {
