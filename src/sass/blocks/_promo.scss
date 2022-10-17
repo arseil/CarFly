@@ -1,4 +1,64 @@
 .promo {
+    z-index: -2;
+    position: relative;
 	min-height: 1080px;
-	background: url('../icons/Group.svg') center center / cover no-repeat;
+	background: url('../img/bg.png') center center / cover no-repeat;
+    &__wrapper {
+        padding-top: 360px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 455px;
+    }
+    &__descr {
+        margin-top: 40px;
+    }
+    &__text {
+        margin-top: 30px;
+        font-family: 'DIN Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: #a8a8a8;
+    }
+    &__carousel {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+    }
+    &__tech {
+        margin-top: 330px;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        &_item {
+            display: grid;
+            grid-template-columns: max-content;
+            grid-template-rows: repeat(2, auto);
+            justify-items: center;
+        }
+        &_circle {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            background-color: #ffffff23;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &_subtitle {
+            margin-top: 15px;
+            font-family: 'DIN Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
 }

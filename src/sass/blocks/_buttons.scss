@@ -1,0 +1,21 @@
+.btn {
+    margin-top: 30px;
+    padding: 20px;
+    height: 65px;
+    width: 240px;
+    background: linear-gradient(135deg, #FCCF31 0%, #F55555 100%);
+    border-radius: 5px;
+    font-family: 'DIN Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s all;
+    &:hover {
+        background: linear-gradient(100deg, #F55555 100%, #FCCF31 0%);
+    }
+}
