@@ -1,9 +1,9 @@
 .element {
 	&__ecllipse {
 		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
+		position: fixed;
+		bottom: -45%;
+		left: -25%;
 		z-index: -1;
 	}
 	&__rectangle {
@@ -77,11 +77,45 @@
 	animation-name: fadeInRight;
 }
 
+@-webkit-keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		/* transform: none; */
+		transform: translate3d(-58%, 0, 0);
+	}
+}
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+  
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		/* transform: none; */
+		transform: translate3d(-58%, 0, 0);
+	}
+}
+  
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+}
+
 @-webkit-keyframes fadeInUp {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 100%, 0);
-		transform: translate3d(0, 100%, 0);
+		-webkit-transform: translate3d(0, 0, 100%);
+		transform: translate3d(0, 0, 100%);
 	}
   
 	to {
@@ -93,8 +127,8 @@
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 100%, 0);
-		transform: translate3d(0, 100%, 0);
+		-webkit-transform: translate3d(0, 0, 100%);
+		transform: translate3d(0, 0, 100%);
 	}
   
 	to {
