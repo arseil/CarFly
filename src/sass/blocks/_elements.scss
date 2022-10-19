@@ -2,15 +2,17 @@
 	&__ecllipse {
 		display: block;
 		position: fixed;
-		bottom: -45%;
+		bottom: -10%;
 		left: -25%;
-		z-index: -1;
+		width: 568px;
+		height: 568px;
+		/* z-index: -1; */
 	}
 	&__rectangle {
 		position: absolute;
 		top: 0;
 		left: 50%;
-		z-index: -1;
+		/* z-index: -1; */
 	}
 }
 
@@ -35,7 +37,7 @@
 	100% {
 	  transform: translate3d(100%, 0, 0);
 	}
-  }
+}
 
 .two {
 	-webkit-animation-delay: 1s;
@@ -123,12 +125,13 @@
 		-webkit-transform: none;
 		transform: none;
 	}
-  }
+}
+
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 0, 100%);
-		transform: translate3d(0, 0, 100%);
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
 	}
   
 	to {
@@ -136,9 +139,9 @@
 		-webkit-transform: none;
 		transform: none;
 	}
-  }
+}
   
 .fadeInUp {
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
-  }
+}
