@@ -4,4 +4,29 @@
 	min-height: 1080px;
 	background: url('../img/bg.png') center center / cover no-repeat;
 	padding-top: 400px;
+	&__wrapper {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		column-gap: 20px;
+	}
+	&__item {
+		height: 355px;
+		width: 720px;
+		background: #0B1C47;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__url {
+		margin-top: 55px;
+		font-weight: 700;
+		font-size: 36px;
+		color: #FFFFFF;
+		&_detali {
+			margin-top: 35px;
+		}
+	}
 }
