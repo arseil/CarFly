@@ -1,6 +1,39 @@
 .product {
-    z-index: -3;
-    position: relative;
+	z-index: -3;
+	position: relative;
 	min-height: 1080px;
 	background: url('../img/bg.png') center center / cover no-repeat;
+	padding-top: 300px;
+	&__wrapper {
+		margin-top: 40px;
+		display: grid;
+		grid-template-rows: repeat(3, auto);
+		row-gap: 10px;
+	}
+	&__item {
+		padding: 30px 100px 30px 40px;
+		width: 100%;
+		height: 190px;
+		background: #0B1C47;
+		border-radius: 5px;
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		column-gap: 30px;
+		align-items: center;
+	}
+	&__text {
+		margin-top: 10px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #a8a8a8;
+	}
+	&__price {
+		width: 200px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 38px;
+		text-align: center;
+		color: #FFFFFF;
+	}
 }

@@ -1,8 +1,16 @@
 .title {
-    font-family: 'DIN Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 90px;
-    color: #FFFFFF;
+	font-family: 'DIN Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 90px;
+	color: #FFFFFF;
+	&_fz48 {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	&_fz22 {
+		font-size: 22px;
+		line-height: 28px;
+	}
 }
