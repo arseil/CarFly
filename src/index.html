@@ -190,47 +190,60 @@
 		</div>
 	</section>
 
-	<section class="questions">
+	<section class="question">
 		<div class="container">
 			<h2 class="title title_fz48">Вопрос - ответ</h2>
-			<div class="accordion" id="accordionExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingOne">
-						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Какой размер устройства?
-						</button>
-					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							Размер устройства 178*100, диагональ 7 дюймов.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Смогу ли я самостоятельно установить?
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							Устройство является универсальным, подойдет на большинство автомобилей. В случае некоторых автомобилей, стандартного комплекта проводов будет вполне достаточно.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-				  	<h2 class="accordion-header" id="headingThree">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							После установки остались зазоры вокруг устройства, что с этим делать?
-						</button>
-					</h2>
-				  	<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							В некоторых автомобилей для правильной установки необходима переходная рамка, для того чтобы убрать все зазоры и неровности. Для уточнения обратитесь в техподдержку.
-						</div>
-				  	</div>
-				</div>
-			</div>
+			
+			<ul class="question__list">
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">Какой размер устройства?</div>
+				<p class="question__text">Размер устройства 178*100, диагональ 7 дюймов.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">Смогу ли я самостоятельно установить?</div>
+				<p class="question__text">Устройство является универсальным, подойдет на большинство автомобилей. В случае некоторых автомобилей, стандартного комплекта проводов будет вполне достаточно.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">После установки остались зазоры вокруг устройства, что с этим делать?</div>
+				<p class="question__text">В некоторых автомобилей для правильной установки необходима переходная рамка, для того чтобы убрать все зазоры и неровности. Для уточнения обратитесь в техподдержку.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">Возможно ли запустить штатный усилитель?</div>
+				<p class="question__text">Возможно, для большинства автомобилей предусмотрен Canbus, который приобретается отдельно под модель автомобиля, где присутствует заводской усилитель звука.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">Будут ли у меня работать кнопки на руле?</div>
+				<p class="question__text">Зачастую для подключения кнопок на руле достаточно набора проводов из комплекта устройства, но бывают случаи, где необходим Canbus. Для уточнения по модели вашего автомобиля, напишите в техподдержку.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">В чем преимущество головного устройства на базе андроид в сравнении с штатным устройством?</div>
+				<p class="question__text">Большое количество функций и очень интересный функционал, фактически это второй телефон, только установленный в автомобиле. Возможность подключения к интернету, подключения вашего смартфона для прослушивания музыки и общения handsfree через Bluetooth, автономная навигация, подключение usb накопителя, функция дублежа экрана с телефона, возможность установить с платформы playmarket все необходимые приложения. Если остались вопросы, напишите нам в техподдержку.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">Какая выходная мощность звука?</div>
+				<p class="question__text">Максимальная мощность звука 50w на канал.</p>
+			</li>
+			<li class="question__item">
+				<input type="checkbox" checked class="question__checkbox">
+				<i class="question__arrow"></i>
+				<div class="question__subtitle">Возможно подключить камеру заднего и переднего вида?</div>
+				<p class="question__text">Да, на устройстве предусмотрены видео выходы под камеры заднего и переднего вида.</p>
+			</li>
+			</ul>	
 		</div>
 		<div class="animate fadeInLeft two element__rectangle element__rectangle_left">
 			<img src="img/elements/Rectangle_left.svg" alt="rectangle">
