@@ -1,0 +1,46 @@
+.contacts {
+    position: relative;
+	min-height: 1080px;
+	background: url('../img/bg.png') center center / cover no-repeat;
+	padding-top: 300px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 470px auto;
+        column-gap: 140px;
+    }
+    &__info {
+        margin-top: 100px;
+    }
+    &__item {
+        margin-top: 80px;
+        position: relative;
+        &:nth-child(2) {
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -40px;
+                height: 1px;
+                width: 470px;
+                background-color: #777777;
+            }
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    &__address {
+        margin: 15px 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    &__tel {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
