@@ -1,12 +1,20 @@
 .element {
 	&__ecllipse {
-		display: block;
-		position: fixed;
+		/* display: block; */
+		position: absolute;
 		bottom: -10%;
-		left: -25%;
+		left: -37%;
 		width: 568px;
 		height: 568px;
-		/* z-index: -1; */
+		/* z-index: 70; */
+		animation: heartbeat 1.7s ease infinite;
+		/* animation-name: heartbeat;
+		animation-duration: 2s;
+		animation-timing-function: ease;
+		animation-iteration-count: infinite; */
+		&:hover {
+			animation-play-state: paused;
+		}
 	}
 	&__rectangle {
 		position: absolute;
@@ -30,13 +38,10 @@
 	animation-iteration-count: 10;
 }
 
-@keyframes scale {
-	0% {
-	  transform: translate3d(-10%, 0, 0);
-	}
-	100% {
-	  transform: translate3d(100%, 0, 0);
-	}
+@keyframes heartbeat {
+    from {transform: scale(1);}
+    50% {transform: scale(1.4);}
+    to {transform: scale(1);}
 }
 
 .two {

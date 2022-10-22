@@ -6,30 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CarFly</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<div id="fullpage">
-		<div class="section" id="section0">
-			<div class="container container_menu">
-				<div class="menu">
-					<div class="menu__logo">
-						<a href="#"><img src="icons/logo.svg" alt="logo"></a>
-					</div>
-					<nav>
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Подукция</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Вопрос-ответ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
+	<div class="container container_menu">
+		<div class="menu">
+			<div class="menu__logo">
+				<a href="#firstPage"><img src="icons/logo.svg" alt="logo"></a>
 			</div>
+			<nav>
+				<ul id="myMenu" class="menu__list">
+					<li data-menuanchor="firstPage" class="menu__item"><a href="#firstPage" class="menu__link">Главная</a></li>
+					<li data-menuanchor="secondPage" class="menu__item"><a href="#secondPage" class="menu__link">Продукция</a></li>
+					<li data-menuanchor="thirdPage" class="menu__item"><a href="#thirdPage" class="menu__link">Где купить</a></li>
+					<li data-menuanchor="fourthPage" class="menu__item"><a href="#fourthPage" class="menu__link">Вопрос-ответ</a></li>
+					<li data-menuanchor="fifthPage" class="menu__item"><a href="#fifthPage" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 
+	<div id="pagepiling">
+		<div class="section">
 			<div class="promo">
 				<div class="container">
 					<div class="promo__wrapper">
@@ -107,27 +108,13 @@
 				<div class="animate fadeInRight two element__rectangle">
 					<img src="img/elements/Rectangle.svg" alt="rectangle">
 				</div>
+				<div class="animate element__ecllipse"> <!-- fadeInUp -->
+					<img src="img/elements/circle.svg" alt="ecllipse">
+				</div>
 			</div>
 		</div>
 
-		<div class="section" id="section1">
-			<div class="container container_menu">
-				<div class="menu">
-					<div class="menu__logo">
-						<a href="#"><img src="icons/logo.svg" alt="logo"></a>
-					</div>
-					<nav>
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Подукция</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Вопрос-ответ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
+		<div class="section">
 			<div class="product">
 				<div class="container">
 					<h2 class="title title_fz48">Продукция</h2>
@@ -187,27 +174,13 @@
 				<div class="animate fadeInLeft two element__rectangle element__rectangle_left">
 					<img src="img/elements/Rectangle_left.svg" alt="rectangle">
 				</div>
+				<div class="animate element__ecllipse"> <!-- fadeInUp -->
+					<img src="img/elements/circle.svg" alt="ecllipse">
+				</div>
 			</div>
 		</div>
 
-		<div class="section" id="section2">
-			<div class="container container_menu">
-				<div class="menu">
-					<div class="menu__logo">
-						<a href="#"><img src="icons/logo.svg" alt="logo"></a>
-					</div>
-					<nav>
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Подукция</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Вопрос-ответ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
+		<div class="section">
 			<div class="buy">
 				<div class="container">
 					<h2 class="title title_fz48">Где купить?</h2>
@@ -227,106 +200,78 @@
 				<div class="animate fadeInRight two element__rectangle">
 					<img src="img/elements/Rectangle.svg" alt="rectangle">
 				</div>
-			</div>
-		</div>
-
-		<div class="section" id="section3">
-			<div class="container container_menu">
-			<div class="menu">
-				<div class="menu__logo">
-					<a href="#"><img src="icons/logo.svg" alt="logo"></a>
-				</div>
-				<nav>
-					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Подукция</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Вопрос-ответ</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-
-		<div class="question">
-			<div class="container">
-				<h2 class="title title_fz48">Вопрос - ответ</h2>
-				
-				<ul class="question__list">
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">Какой размер устройства?</div>
-					<p class="question__text">Размер устройства 178*100, диагональ 7 дюймов.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">Смогу ли я самостоятельно установить?</div>
-					<p class="question__text">Устройство является универсальным, подойдет на большинство автомобилей. В случае некоторых автомобилей, стандартного комплекта проводов будет вполне достаточно.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">После установки остались зазоры вокруг устройства, что с этим делать?</div>
-					<p class="question__text">В некоторых автомобилей для правильной установки необходима переходная рамка, для того чтобы убрать все зазоры и неровности. Для уточнения обратитесь в техподдержку.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">Возможно ли запустить штатный усилитель?</div>
-					<p class="question__text">Возможно, для большинства автомобилей предусмотрен Canbus, который приобретается отдельно под модель автомобиля, где присутствует заводской усилитель звука.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">Будут ли у меня работать кнопки на руле?</div>
-					<p class="question__text">Зачастую для подключения кнопок на руле достаточно набора проводов из комплекта устройства, но бывают случаи, где необходим Canbus. Для уточнения по модели вашего автомобиля, напишите в техподдержку.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">В чем преимущество головного устройства на базе андроид в сравнении с штатным устройством?</div>
-					<p class="question__text">Большое количество функций и очень интересный функционал, фактически это второй телефон, только установленный в автомобиле. Возможность подключения к интернету, подключения вашего смартфона для прослушивания музыки и общения handsfree через Bluetooth, автономная навигация, подключение usb накопителя, функция дублежа экрана с телефона, возможность установить с платформы playmarket все необходимые приложения. Если остались вопросы, напишите нам в техподдержку.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">Какая выходная мощность звука?</div>
-					<p class="question__text">Максимальная мощность звука 50w на канал.</p>
-				</li>
-				<li class="question__item">
-					<input type="checkbox" checked class="question__checkbox">
-					<i class="question__arrow"></i>
-					<div class="question__subtitle">Возможно подключить камеру заднего и переднего вида?</div>
-					<p class="question__text">Да, на устройстве предусмотрены видео выходы под камеры заднего и переднего вида.</p>
-				</li>
-				</ul>	
-			</div>
-			<div class="animate fadeInLeft two element__rectangle element__rectangle_left">
-				<img src="img/elements/Rectangle_left.svg" alt="rectangle">
-			</div>
-		</div>
-		</div>
-
-		<div class="section" id="section4">
-			<div class="container container_menu">
-				<div class="menu">
-					<div class="menu__logo">
-						<a href="#"><img src="icons/logo.svg" alt="logo"></a>
-					</div>
-					<nav>
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Подукция</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Вопрос-ответ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-						</ul>
-					</nav>
+				<div class="animate element__ecllipse"> <!-- fadeInUp -->
+					<img src="img/elements/circle.svg" alt="ecllipse">
 				</div>
 			</div>
+		</div>
 
+		<div class="section">
+			<div class="question">
+				<div class="container">
+					<h2 class="title title_fz48">Вопрос - ответ</h2>
+					
+					<ul class="question__list">
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">Какой размер устройства?</div>
+							<p class="question__text">Размер устройства 178*100, диагональ 7 дюймов.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">Смогу ли я самостоятельно установить?</div>
+							<p class="question__text">Устройство является универсальным, подойдет на большинство автомобилей. В случае некоторых автомобилей, стандартного комплекта проводов будет вполне достаточно.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">После установки остались зазоры вокруг устройства, что с этим делать?</div>
+							<p class="question__text">В некоторых автомобилей для правильной установки необходима переходная рамка, для того чтобы убрать все зазоры и неровности. Для уточнения обратитесь в техподдержку.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">Возможно ли запустить штатный усилитель?</div>
+							<p class="question__text">Возможно, для большинства автомобилей предусмотрен Canbus, который приобретается отдельно под модель автомобиля, где присутствует заводской усилитель звука.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">Будут ли у меня работать кнопки на руле?</div>
+							<p class="question__text">Зачастую для подключения кнопок на руле достаточно набора проводов из комплекта устройства, но бывают случаи, где необходим Canbus. Для уточнения по модели вашего автомобиля, напишите в техподдержку.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">В чем преимущество головного устройства на базе андроид в сравнении с штатным устройством?</div>
+							<p class="question__text">Большое количество функций и очень интересный функционал, фактически это второй телефон, только установленный в автомобиле. Возможность подключения к интернету, подключения вашего смартфона для прослушивания музыки и общения handsfree через Bluetooth, автономная навигация, подключение usb накопителя, функция дублежа экрана с телефона, возможность установить с платформы playmarket все необходимые приложения. Если остались вопросы, напишите нам в техподдержку.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">Какая выходная мощность звука?</div>
+							<p class="question__text">Максимальная мощность звука 50w на канал.</p>
+						</li>
+						<li class="question__item">
+							<input type="checkbox" checked class="question__checkbox">
+							<i class="question__arrow"></i>
+							<div class="question__subtitle">Возможно подключить камеру заднего и переднего вида?</div>
+							<p class="question__text">Да, на устройстве предусмотрены видео выходы под камеры заднего и переднего вида.</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="animate fadeInLeft two element__rectangle element__rectangle_left">
+					<img src="img/elements/Rectangle_left.svg" alt="rectangle">
+				</div>
+				<div class="animate element__ecllipse"> <!-- fadeInUp -->
+					<img src="img/elements/circle.svg" alt="ecllipse">
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
 			<div class="contacts">
 				<div class="container">
 					<div class="contacts__wrapper">
@@ -361,296 +306,16 @@
 				<div class="animate fadeInRight two element__rectangle">
 					<img src="img/elements/Rectangle.svg" alt="rectangle">
 				</div>
+				<div class="element__ecllipse"> <!-- fadeInUp -->
+					<img src="img/elements/circle.svg" alt="ecllipse">
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- <header>
-		<div class="container container_menu">
-			<div class="menu">
-				<div class="menu__logo">
-					<a href="#"><img src="icons/logo.svg" alt="logo"></a>
-				</div>
-				<nav>
-					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Подукция</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Вопрос-ответ</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header> -->
-
-	<!-- <section class="promo">
-		<div class="container">
-			<div class="promo__wrapper">
-				<div class="promo__descr">
-					<h1 class="title">
-						Автомагнитола CarFly M320
-					</h1>
-					<div class="promo__text">
-						Приемник для смартфона SPH-10BT Pioneer создан для безопасного и простого доступа к приложениям смартфона при помощи четырех специальных кнопок.
-					</div>
-					<button class="btn">
-						<div>Подробнее</div>
-						<div><img src="icons/btn_pdf.png" alt="pdf"></div>
-					</button>
-				</div>
-				<div class="promo__carousel carousel__container">
-					<div id="carousel">
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-						<div>
-							<img src="img/promo/promo_car.png" alt="promo_car" class="carousel__img">
-						</div>
-					</div>
-					<div class="promo__tech">
-						<div class="promo__tech_item">
-							<div class="promo__tech_circle">
-								<img src="icons/promo/android-logo.svg" alt="android-logo">
-							</div>
-							<div class="promo__tech_subtitle">
-								Android 8.2
-							</div>
-						</div>
-						<div class="promo__tech_item">
-							<div class="promo__tech_circle">
-								<img src="icons/promo/size.svg" alt="size">
-							</div>
-							<div class="promo__tech_subtitle">
-								180x50x160 мм
-							</div>
-						</div>
-						<div class="promo__tech_item">
-							<div class="promo__tech_circle">
-								<img src="icons/promo/sound-bars.svg" alt="sound-bars">
-							</div>
-							<div class="promo__tech_subtitle">
-								4x22 Вт
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="animate fadeInRight two element__rectangle">
-			<img src="img/elements/Rectangle.svg" alt="rectangle">
-		</div>
-	</section> -->
-
-	<!-- <section class="product">
-		<div class="container">
-			<h2 class="title title_fz48">Продукция</h2>
-			<div class="product__wrapper">
-				<div class="product__item">
-					<div class="product__image">
-						<img src="img/product/product_image.png" alt="product_image">
-					</div>
-					<div class="product__descr">
-						<h3 class="title title_fz22">Автомагнитола CarFly M320</h3>
-						<div class="product__text">
-							Приемник для смартфона SPH-10BT Pioneer создан для безопасного и простого доступа к приложениям смартфона при помощи четырех специальных кнопок.
-						</div>
-					</div>
-					<div class="product__price">14 999 р.</div>
-					<button class="btn">
-						<div>Подробнее</div>
-						<div><img src="icons/btn_pdf.png" alt="pdf"></div>
-					</button>
-				</div>
-
-				<div class="product__item">
-					<div class="product__image">
-						<img src="img/product/product_image.png" alt="product_image">
-					</div>
-					<div class="product__descr">
-						<h3 class="title title_fz22">Автомагнитола CarFly M320</h3>
-						<div class="product__text">
-							Приемник для смартфона SPH-10BT Pioneer создан для безопасного и простого доступа к приложениям смартфона при помощи четырех специальных кнопок.
-						</div>
-					</div>
-					<div class="product__price">14 999 р.</div>
-					<button class="btn">
-						<div>Подробнее</div>
-						<div><img src="icons/btn_pdf.png" alt="pdf"></div>
-					</button>
-				</div>
-
-				<div class="product__item">
-					<div class="product__image">
-						<img src="img/product/product_image.png" alt="product_image">
-					</div>
-					<div class="product__descr">
-						<h3 class="title title_fz22">Автомагнитола CarFly M320</h3>
-						<div class="product__text">
-							Приемник для смартфона SPH-10BT Pioneer создан для безопасного и простого доступа к приложениям смартфона при помощи четырех специальных кнопок.
-						</div>
-					</div>
-					<div class="product__price">14 999 р.</div>
-					<button class="btn">
-						<div>Подробнее</div>
-						<div><img src="icons/btn_pdf.png" alt="pdf"></div>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="animate fadeInLeft two element__rectangle element__rectangle_left">
-			<img src="img/elements/Rectangle_left.svg" alt="rectangle">
-		</div>
-	</section> -->
-
-	<!-- <section class="buy">
-		<div class="container">
-			<h2 class="title title_fz48">Где купить?</h2>
-			<div class="buy__wrapper">
-				<div class="buy__item">
-					<div>
-						<img src="icons/buy/yandex.png" alt="yandex">
-					</div>
-					<div class="buy__url">market.yandex.ru</div>
-				</div>
-				<div class="buy__item">
-					<img src="icons/buy/detali.png" alt="detali">
-					<div class="buy__url buy__url_detali">detaliclub.ru</div>
-				</div>
-			</div>
-		</div>
-		<div class="animate fadeInRight two element__rectangle">
-			<img src="img/elements/Rectangle.svg" alt="rectangle">
-		</div>
-	</section> -->
-
-	<!-- <section class="question">
-		<div class="container">
-			<h2 class="title title_fz48">Вопрос - ответ</h2>
-			
-			<ul class="question__list">
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">Какой размер устройства?</div>
-				<p class="question__text">Размер устройства 178*100, диагональ 7 дюймов.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">Смогу ли я самостоятельно установить?</div>
-				<p class="question__text">Устройство является универсальным, подойдет на большинство автомобилей. В случае некоторых автомобилей, стандартного комплекта проводов будет вполне достаточно.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">После установки остались зазоры вокруг устройства, что с этим делать?</div>
-				<p class="question__text">В некоторых автомобилей для правильной установки необходима переходная рамка, для того чтобы убрать все зазоры и неровности. Для уточнения обратитесь в техподдержку.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">Возможно ли запустить штатный усилитель?</div>
-				<p class="question__text">Возможно, для большинства автомобилей предусмотрен Canbus, который приобретается отдельно под модель автомобиля, где присутствует заводской усилитель звука.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">Будут ли у меня работать кнопки на руле?</div>
-				<p class="question__text">Зачастую для подключения кнопок на руле достаточно набора проводов из комплекта устройства, но бывают случаи, где необходим Canbus. Для уточнения по модели вашего автомобиля, напишите в техподдержку.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">В чем преимущество головного устройства на базе андроид в сравнении с штатным устройством?</div>
-				<p class="question__text">Большое количество функций и очень интересный функционал, фактически это второй телефон, только установленный в автомобиле. Возможность подключения к интернету, подключения вашего смартфона для прослушивания музыки и общения handsfree через Bluetooth, автономная навигация, подключение usb накопителя, функция дублежа экрана с телефона, возможность установить с платформы playmarket все необходимые приложения. Если остались вопросы, напишите нам в техподдержку.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">Какая выходная мощность звука?</div>
-				<p class="question__text">Максимальная мощность звука 50w на канал.</p>
-			</li>
-			<li class="question__item">
-				<input type="checkbox" checked class="question__checkbox">
-				<i class="question__arrow"></i>
-				<div class="question__subtitle">Возможно подключить камеру заднего и переднего вида?</div>
-				<p class="question__text">Да, на устройстве предусмотрены видео выходы под камеры заднего и переднего вида.</p>
-			</li>
-			</ul>	
-		</div>
-		<div class="animate fadeInLeft two element__rectangle element__rectangle_left">
-			<img src="img/elements/Rectangle_left.svg" alt="rectangle">
-		</div>
-	</section> -->
-
-	<!-- <section class="contacts">
-		<div class="container">
-			<div class="contacts__wrapper">
-				<div class="contacts__info">
-					<h2 class="title title_fz48">Контакты</h2>
-					<div class="contacts__item">
-						<div class="contacts__subtitle">
-							Центральный офис в Иркутске:
-						</div>
-						<div class="contacts__address">
-							ул.Октябрьской революции, д.1, к.2
-							ТЦ "Автоград", павильон № 101, павильон № 106
-						</div>
-						<a href="tel:+73952628369" class="contacts__tel">+7 (3952) 62-83-69</a>
-					</div>
-
-					<div class="contacts__item">
-						<div class="contacts__subtitle">
-							Сервисный центр в Иркутске:
-						</div>
-						<div class="contacts__address">
-							ул.Баррикад, 2/13, Павловский рынок Пав #50
-						</div>
-						<a href="tel:+73952628369" class="contacts__tel">8 (3952) 62 83 69</a>
-					</div>
-				</div>
-				<div class="contacts__map">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a53597f9f3a8f968a402ba416c60ee866ff890c1a3c0640b389a1bdad4fc7a1&amp;source=constructor" width="830" height="690" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="animate fadeInRight two element__rectangle">
-			<img src="img/elements/Rectangle.svg" alt="rectangle">
-		</div>
-	</section> -->
-
-	
-
-	<div class="animate fadeInUp element__ecllipse">
-		<img src="img/elements/circle.svg" alt="ecllipse">
-	</div>
-
-	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-	<!-- <script src="js/easings.min.js"></script> -->
-	<script type="text/javascript" src="https://cdnjs.com/libraries/fullPage.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
