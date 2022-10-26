@@ -18,3 +18,53 @@
 		to {transform: scale(1);}
 	}
 }
+
+@mixin rectangle {
+    &:after {
+		content: '';
+		position: absolute;
+		width: 200px;
+		height: 100%;
+		left: 50%;
+		top: 0;
+		transform: skewX(215deg) translateX(-50%);
+		background: linear-gradient(180deg, #FF0F87 -23.87%, #4612CC 124.07%), #C4C4C4;
+        animation: fadeIn 5s ease-in;
+	}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            left: 100%;
+        }
+      
+        to {
+            opacity: 1;
+            left: 50%;
+        }
+    }
+}
+
+@mixin rectangleRight {
+    &:after {
+		content: '';
+		position: absolute;
+		width: 200px;
+		height: 100%;
+		left: 50%;
+		top: 0;
+		transform: skewX(-215deg) translateX(-50%);
+		background: linear-gradient(0deg, #FF0F87 -23.87%, #4612CC 124.07%), #C4C4C4;
+        animation: fadeIn 5s ease-in;
+	}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            left: 100%;
+        }
+      
+        to {
+            opacity: 1;
+            left: 50%;
+        }
+    }
+}
