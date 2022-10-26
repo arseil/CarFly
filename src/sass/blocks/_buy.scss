@@ -4,7 +4,6 @@
 	background: url('../img/bg.png') center center / cover no-repeat;
 	padding-top: 400px;
 	&__wrapper {
-		position: relative;
 		margin-top: 40px;
 		display: grid;
 		grid-template-columns: repeat(3, auto);
@@ -12,7 +11,7 @@
 	}
 	&__item {
 		height: 355px;
-		width: 720px;
+		width: 680px;
 		background: #0B1C47;
 		border-radius: 5px;
 		display: flex;
@@ -28,23 +27,36 @@
 		&_detali {
 			margin-top: 35px;
 		}
+		&_wb {
+			margin-top: 30px;
+		}
 	}
 }
 .slick-prev, .slick-next {
 	position: absolute;
-	top: 0;
-	width: 98px;
-	height: 17px;
+	top: -40px;
 	transform: translateY(-50%);
-	left: -66px;
+	right: 180px;
 	border: none;
 	background-color: unset;
+	transition: 0.5s all;
 	img {
-		width: 31px;;
-		height: 50px;
+		width: 98px;
+		height: 17px;
 	}
 }
 .slick-next {
-	right: -66px;
+	right: 50px;
 	left: auto;
+	opacity: 0.2;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.slick-prev {
+	opacity: 0.2;
+	&:hover {
+		opacity: 1;
+	}
 }
