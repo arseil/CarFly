@@ -1,72 +1,72 @@
 .accordeon {
-    margin-top: 50px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    z-index: 80;
-    &__column {
-        width: calc(50% - 15px);
-    }
-    &__panel {
-        position: relative;
-        background: #0B1C47;
-        border-radius: 10px;
-        &:not(:last-child) {
-            margin-bottom: 12px;
-        }
-    }
-    &__heading {
-        font-weight: 400;
-        display: block;
-        padding: 25px 40px;
-        position: relative;
-        cursor: pointer;
-        transition: .4s;
-        display: flex;
-        align-items: center;
-        background: #0B1C47;
-        border-radius: 5px;
-        span {
-            font-size: 18px;
-            color: #fff;
-        }
-    }
-    &__collapse {
-        display: none;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-        padding: 15px 40px 33px 40px;
-        position: relative;
-        background: #081330;
-        color: #fff;
-    }
-    .ins {
-        .accordeon__plus {
-            svg {
-                animation: flipdown 0.5s ease; 
-            }
-        } 
-    }
+	margin-top: 50px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	z-index: 80;
+	&__column {
+		width: calc(50% - 15px);
+	}
+	&__panel {
+		position: relative;
+		background: #0B1C47;
+		border-radius: 10px;
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+	&__heading {
+		font-weight: 400;
+		display: block;
+		padding: 25px 40px;
+		position: relative;
+		cursor: pointer;
+		transition: .4s;
+		display: flex;
+		align-items: center;
+		background: #0B1C47;
+		border-radius: 5px;
+		span {
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+	&__collapse {
+		display: none;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+		padding: 15px 40px 33px 40px;
+		position: relative;
+		background: #081330;
+		color: #fff;
+	}
+	.ins {
+		.accordeon__plus {
+			svg {
+				animation: flipdown 0.5s ease; 
+			}
+		} 
+	}
 
-    &__plus {
-        position: absolute;
-        right: 40px;
-        top: 28px;
-        svg {
-            transition: .4s;
-        }
-    }
+	&__plus {
+		position: absolute;
+		right: 40px;
+		top: 28px;
+		svg {
+			transition: .4s;
+		}
+	}
 }
 
 @keyframes flipdown {
 	0% {
-        transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	100% {
 		
-        transform: rotate(180deg);
+		transform: rotate(180deg);
 	} 
 }

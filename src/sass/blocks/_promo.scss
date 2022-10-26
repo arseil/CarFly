@@ -1,7 +1,8 @@
 .promo {
 	position: relative;
-	min-height: 1080px;
+	height: 100%;
 	background: url('../img/bg.png') center center / cover no-repeat;
+	@include circle;
 	&__wrapper {
 		padding-top: 360px;
 		display: grid;
