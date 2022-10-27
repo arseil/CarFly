@@ -38,35 +38,24 @@
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 400;
-		padding: 15px 40px 33px 40px;
+		padding: 20px 40px;
 		position: relative;
 		background: #081330;
-		color: #fff;
+		color: #c4c4c4;
 	}
-	.ins {
-		.accordeon__plus {
-			svg {
-				animation: flipdown 0.5s ease; 
-			}
-		} 
-	}
-
 	&__plus {
 		position: absolute;
 		right: 40px;
 		top: 28px;
 		svg {
-			transition: .4s;
+			transition: 0.5s all;
 		}
 	}
-}
-
-@keyframes flipdown {
-	0% {
-		transform: rotate(0deg);
+	.ins {
+		.accordeon__plus {
+			svg {
+				transform: rotate(180deg);
+			}
+		} 
 	}
-	100% {
-		
-		transform: rotate(180deg);
-	} 
 }
